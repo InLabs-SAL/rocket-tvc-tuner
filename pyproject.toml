@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "rocket-simulator"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+pygame-ce = "^2.5.2"
+pymunk = "^6.10.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = ">=0.8.0"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+    "N",
+    "B",
+    "A",
+    "Q",
+    "UP",
+    "C4",
+    "PL",
+    "RUF",
+    "ARG",
+    "SIM",
+    "PIE",
+    "BLE",
+    "FBT",
+    "ISC",
+    "RSE",
+    "FLY",
+    "RET",
+    "T20",
+    "ICN",
+    "TC",
+    "SLOT",
+    "PERF",
+    "ANN",
+    # "FURB",
+]
+ignore = ["SIM105", "PERF203", "ISC001", "PLC0414", "RUF022", "RUF023", "ANN401", "RUF005"]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+combine-as-imports = true
+
+
+[tool.mypy]
+enable_error_code = [
+    "ignore-without-code",
+    "redundant-expr",
+    "possibly-undefined",
+    "truthy-bool",
+    "truthy-iterable",
+    "mutable-override",
+]
+disallow_subclassing_any = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+no_implicit_reexport = true
+strict_equality = true
+extra_checks = true
+disallow_any_unimported = true
+warn_unreachable = true
