@@ -57,7 +57,7 @@ def main() -> None:
         offset = (SIZE[0] / 2, SIZE[1] / 2) - camera_position
         debug_draw_options.transform = pm.Transform.translation(offset[0], offset[1])
         space.debug_draw(debug_draw_options)
-        pg.display.update()
+        pg.display.flip()
         frame = clock.tick(FPS) / 1000
         time += frame
 
