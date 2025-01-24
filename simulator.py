@@ -1,9 +1,9 @@
 """
 
 Metric units:
-seconds
-kilograms
-meters
+seconds (1.0 time)
+kilograms (1.0 mass)
+meters (1.0 pixels)
 """
 
 import pygame as pg
