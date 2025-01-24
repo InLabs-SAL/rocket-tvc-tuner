@@ -15,16 +15,13 @@ pg.init()
 
 
 SIZE = 1280, 720
-
 FPS = 60
-
 CAPTION = "Simulator"
-
 dt = 1 / FPS
 
 display = pg.display.set_mode(SIZE)
-
 pg.display.set_caption(CAPTION)
+
 camera_position = pg.Vector2()
 
 space = pm.Space()
