@@ -1,5 +1,6 @@
 [tool.poetry]
 name = "rocket-simulator"
+description = "simulator for tuning TVC"
 package-mode = false
 
 [tool.poetry.dependencies]
