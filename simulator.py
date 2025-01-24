@@ -16,7 +16,7 @@ pg.init()
 
 SIZE = 1280, 720
 FPS = 60
-CAPTION = "Simulator"
+CAPTION = "Rocket TVC simulator"
 dt = 1 / FPS
 
 display = pg.display.set_mode(SIZE)
@@ -29,6 +29,7 @@ debug_draw_options = pm.pygame_util.DrawOptions(display)
 
 space.gravity = 0, 9.8
 
+# thicc
 density = 1000
 
 rocket = pm.Body()
